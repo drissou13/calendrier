@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning des Événements - Marseille</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Planning des Événements à Marseille</h1>
+    </header>
+    <main>
+        <div id="calendar" class="calendar">
+            <!-- Le contenu sera généré automatiquement par JavaScript -->
+        </div>
+    </main>
+
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="event-title"></h2>
+            <p id="event-date"></p>
+            <p id="event-time"></p>
+            <p id="event-location"></p>
+            <a id="event-link" href="#" target="_blank">Plus d'informations</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

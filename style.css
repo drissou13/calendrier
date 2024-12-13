@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6200ea;
+    color: white;
+}
+
+.calendar {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.day {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day h3 {
+    margin-top: 0;
+    color: #6200ea;
+}
+
+.day ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.day li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.day li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.day li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.modal-content {
+    position: relative;
+    text-align: center;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 20px;
+}
+
+.modal-content h2 {
+    color: #6200ea;
+}
+
+.modal-content a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #6200ea;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.modal-content a:hover {
+    color: #3700b3;
+}
